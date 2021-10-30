@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+  <head>
+    <title>Questions</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel='shortcut icon' type='image/x-icon' href="/static/brain.png" />
+    <link rel="stylesheet" type="text/css" href="/static/style/questions.css">
+    <link rel="stylesheet" type="text/css" href="/static/style/buttons.css">
+    <link rel="stylesheet" type="text/css" href="/static/style/jump.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <p id="main_title">Let's Start!</p>
+      <p id="des">You'll be asked 10 questions to predict your risk of stroke</p>
+      <p id="des2">*Each question will explain its relevance to stroke</p>
+      <input type="button" value="Begin" id="begin" onclick="q1();"></input>
+      <!--<p id="server_status">• Server Status: Online</p> -->
+    </div>
+    <div id="completed">
+      <div id="d0" class="dotInd" onclick="q1();"></div>
+      <div id="d1" class="dotInd" onclick="q2();"></div>
+      <div id="d2" class="dotInd" onclick="q3()"></div>
+      <div id="d3" class="dotInd" onclick="q4()"></div>
+      <div id="d4" class="dotInd" onclick="q5()"></div>
+      <div id="d5" class="dotInd" onclick="q6()"></div>
+      <div id="d6" class="dotInd" onclick="q7()"></div>
+      <div id="d7" class="dotInd" onclick="q8()"></div>
+      <div id="d8" class="dotInd" onclick="q9()"></div>
+      <div id="d9" class="dotInd" onclick="q10()"></div>
+      <div id="submitDot" class="dotInd" onclick="submitSlide()"></div>
+    </div>
+
+    <div id="backwardArrow" onclick="goBack();" class="noselect"><p id="nav_text1">◀<p></div>
+    <div id="fowardArrow" onclick="goFoward();" class="noselect"><p id="nav_text2">▶<p></div>
+
+    <script type="text/babel" src='/static/scripts/questions.js'></script>
+  </body>
+</html>

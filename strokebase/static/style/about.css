@@ -1,0 +1,72 @@
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+li {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#app_des_con  {
+  position : absolute;
+  left: 0px;
+  top: 50px;
+  background-image: linear-gradient(90deg, #1A2980, #26D0CE);
+  width: 100%;
+  height: 320px;
+}
+#nav_bar {
+  position : absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+}
+#content_bar {
+  position: absolute;
+  width: 195px;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav_link {
+  position: absolute;
+  color : white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.nav_link:Hover {
+  color: gray;
+}
+#banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: 100px;
+}
+#banner_img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+#banner_title {
+  position : absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  top: -27px;
+  left: 100px;
+  font-size: 40px;
+}
+#content {
+  position: absolute;
+  max-width: 900px;
+  text-align: left;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 390px;
+}

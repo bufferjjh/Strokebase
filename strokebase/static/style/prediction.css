@@ -1,0 +1,147 @@
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#results {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  height: 280px;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+}
+#strokeStatus {
+  color: white;
+  font-size: 40px;
+}
+#confidence {
+  color: white;
+  font-size: 40px;
+}
+#disclaimer {
+  display:block;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  top: 0px;
+}
+#disclaimer_text {
+  color: #ffff26;
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 16px;
+  border: 2px solid red;
+  padding: 8px;
+  max-width: 800px;
+  background-color:red;
+  border-radius: 6px;
+}
+#btns {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 335px;
+  height: 80px;
+  bottom: 30px;
+}
+#bottom_content {
+  position: absolute;
+  width: 100%;
+  top: 280px;
+  height: calc(100% - 280px);
+  left:0px;
+}
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: .5s;
+}
+
+.dropup {
+  position: fixed;
+  display: inline-block;
+  bottom: 9px;
+  right: 12px;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 107px;
+  bottom: 50px;
+  z-index: 1;
+  transition: .3s;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: .5s;
+}
+
+.dropup-content a:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
+}
+#risk_factor_title {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+}
+.risk_factors {
+  display: block;
+  padding: 8px;
+  position: relative;
+  background-color: green;
+  max-width: 800px;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+}
+#check {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+}
+.imgDiv {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  right: 20px;
+  border-radius: 50px;
+  background-color: white;
+  top: 40px;
+}
+.imgSrc {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  right: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}

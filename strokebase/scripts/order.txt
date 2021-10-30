@@ -1,0 +1,59 @@
+gender
+age
+hypertension
+heart_disease
+ever_married
+Residence_type
+avg_glucose_level
+bmi
+smoking_status_formerly smoked
+smoking_status_never smoked
+smoking_status_smokes
+work_type_Govt_job
+work_type_Never_worked
+work_type_Private
+work_type_Self-employed
+work_type_children
+
+
+gender : {
+  male - 1
+  famale,other: 0
+}
+age {
+  number
+}
+hypertension {
+  0 - no hypertension
+  1 - yes hypertension
+}
+ ever_married {
+  0 - No
+  1 - Yes
+}
+Residence Type {
+  0 - Rural
+  1 - Urban
+}
+glucose level {
+  number
+}
+bmi {
+  number
+}
+smoking {
+  formerly smoked: 0,1
+  never smoked: 0,1
+  smokes: 0,1
+}
+work_type {
+  Govt_job: 0,1
+  Never_worked: 0,1
+  Private: 0,1
+  Self-employed: 0,1
+  children: 0,1
+}
+heart_diesease {
+  0 - no heart disease
+  1 - heart disease
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+  <head>
+    <title>Strokebase • About</title>
+    <link rel='shortcut icon' type='image/x-icon' href="/static/brain.png" />
+    <link rel="stylesheet" type="text/css" href="/static/style/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body>
+    <div id="nav_bar">
+      <div id="content_bar">
+        <a href="/"><p class="nav_link" style="left: 0px;">Home</p></a>
+        <a href="/questions"><p class="nav_link" style="left: 70px;">Predict</p></a>
+        <a href="/figures"><p class="nav_link" style="left: 144px;">Figures</p></a>
+      </div>
+    </div>
+    <div id="app_des_con">
+      <div id="banner">
+        <img src="/static/brain.png" id="banner_img">
+        <p id="banner_title">S T R O K E B A S E</p>
+      </div>
+    </div>
+    <div id="content">
+      <h1>Overview</h1>
+      <p style="font-size: 20px;">
+Strokebase was built to provide a quick and precise prediction of one’s stroke risk using machine learning. After answering a series of questions, users can see the model’s prediction along with the prediction confidence. For each question, Strokebase cites a credible source that describes its relation to stroke. However, given the brief and surface-level nature of Strokebase, users should NOT use predictions as a real medical diagnosis. Strokebase is unable to perform physical tests and does not cover a variety of other factors that may be related to stroke. To receive a comprehensive assessment, users should always visit a medical professional.
+      </p>
+      <h1>Development</h1>
+      <p style="font-size: 20px;">
+        The heart of Strokebase is its prediction model. The model was built using Python since the language allowed the use of many useful libraries including Sklearn, NumPy, and Pandas. Pandas was used to clean and represent the data in a DataFrame. Since there was incomplete and non-numerical data, Pandas allowed for easy cleaning and encoding. Strokebase’s model also made use of the Logistic Regression Model which is part of SkLearn. Logistic Regression is commonly used to predict the probability of an event happening, which is stroke or no stroke in this case. After training the model, Python’s pickle module allowed the model object to be saved as a file. Therefore, the model didn’t have to be trained repeatedly and models with high accuracy could be saved. Over 100 iterations of training, the best model was saved with an accuracy score of 95.63% (Rounded to the nearest hundredth)
+        <br><br>
+        The backend server was programmed using Flask. Since the backend server also used Python, it could easily access prediction functions from the model (also built using python). Personally, I think Flask syntax is pretty clear with requests and responses. The front-end was built using React. This made rendering different questions to the page easier as each question could be treated as a component. JSX also made creating components easier since HTML could be written within JavaScript.
+        <br><br>
+        Source Code <a href="https://github.com/bufferjjh/Strokebase">here</a>!
+      </p>
+      <h1>Sources and Attributions</h1>
+      <p style="font-size: 20px;">
+        Works Cited: <a href="/static/sources.pdf">Here</a>!<br>
+        Training Data: <a href="https://www.kaggle.com/fedesoriano/stroke-prediction-dataset">Here</a>!<br>
+        Dataset maintainer: <a href="https://www.kaggle.com/fedesoriano">fedesoriano</a><br>
+        <br>
+        <u>Images</u><br>
+        Ambulance: <a href="https://unsplash.com/photos/vGu08RYjO-s">https://unsplash.com/photos/vGu08RYjO-s</a><br>
+        Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br><br>
+        <u>Design Inspirations</u>
+        <li><a href="https://codepen.io/himalayasingh/pen/EdVzNL">https://codepen.io/himalayasingh/pen/EdVzNL</a></li>
+        <li><a href="http://www.java2s.com/example/html-css/css-animation/jumping-dots-animation.html">http://www.java2s.com/example/html-css/css-animation/jumping-dots-animation.html</a></li>
+      </p>
+    </div>
+  </body>
+</html>

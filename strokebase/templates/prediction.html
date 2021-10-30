@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+  <head>
+    <link rel='shortcut icon' type='image/x-icon' href="/static/brain.png" />
+    <link rel="stylesheet" type="text/css" href="static/style/prediction.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <body>
+    <div id="results">
+      <p id="strokeStatus">Predicted risk: <a style="color: {{color1}}; font-weight: bold">{{ low_high }}</a></p>
+      <p id="confidence">Confidence: <a style="color: yellow; font-weight: bold">{{ confidence }}</a></p>
+    </div>
+    <div id="bottom_content">
+      <div id="disclaimer">
+        <center>
+        <p id="disclaimer_text">
+          Note: Visiting a <b>medical professional</b> is the best option to recieve a comprehensive assessment of your risk. Strokebase provides a rough prediction using only surface-level data.
+        </p>
+      </center>
+      </div>
+      <b><p id="risk_factor_title">Risk Factors</p></b>
+    </div>
+    <div class="dropup">
+      <button class="dropbtn">▲ Navigate</button>
+      <div class="dropup-content">
+        <a href="/figures">Figures</a>
+        <a href="/about">About</a>
+        <a href="/">Home</a>
+      </div>
+    </div>
+  </body>
+  <script src="/static/scripts/prediction.js"></script>
+</html>
